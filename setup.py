@@ -19,8 +19,7 @@ import os
 this = os.path.dirname(__file__)
 
 with open(os.path.join(this, "requirements.txt"), "r") as f:
-    requirements = [_ for _ in [_.strip("\r\n ")
-                                for _ in f.readlines()] if _ is not None]
+    requirements = ()
 
 packages = find_packages()
 assert packages
